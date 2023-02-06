@@ -85,7 +85,7 @@ h1.company-name {
 	}
 	&__bg-icon-two {
 		display: none;
-        animation: rotate-left 55s infinite linear
+		animation: rotate-left 55s infinite linear;
 	}
 }
 .hamburger {
@@ -136,7 +136,6 @@ h1.company-name {
 		&:hover {
 			color: $gold;
 		}
-		
 	}
 }
 @import "./small";
