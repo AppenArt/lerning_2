@@ -1,10 +1,6 @@
 @use "./colors" as *;
 @use "./animations" as *;
 
-@use "./small" as *;
-@use "./medium" as *;
-@use "./large" as *;
-
 *,
 *::after,
 *::before {
@@ -89,6 +85,7 @@ h1.company-name {
 	}
 	&__bg-icon-two {
 		display: none;
+        animation: rotate-left 55s infinite linear
 	}
 }
 .hamburger {
@@ -104,3 +101,44 @@ h1.company-name {
 		z-index: 500;
 	}
 }
+.nav {
+	&-mobile {
+		position: absolute;
+		display: flex;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		background-color: $white;
+		transform: translateX(-102%);
+		transition: transform 0.3s;
+		z-index: 10;
+		&--active {
+			transform: translateX(0);
+		}
+	}
+	&-desktop {
+		display: none;
+	}
+	&__link {
+		position: relative;
+		display: inline-block;
+		margin: 0.5em;
+		padding: 0.5em;
+		font-size: 2.3rem;
+		color: $darker;
+		text-transform: uppercase;
+		text-decoration: none;
+		transition: color 0.3s;
+		&:hover {
+			color: $gold;
+		}
+		
+	}
+}
+@import "./small";
+@import "./medium";
+@import "./large";
