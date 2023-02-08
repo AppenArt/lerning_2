@@ -254,6 +254,8 @@ h1.company-name {
 	}
 	&__box-link {
 		display: block;
+        margin-left: auto;
+        width: fit-content;
 		margin-bottom: 2em;
 		font-weight: bold;
 		color: $gold;

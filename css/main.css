@@ -302,6 +302,10 @@ h1.company-name {
 }
 .info__box-link {
   display: block;
+  margin-left: auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   margin-bottom: 2em;
   font-weight: bold;
   color: #d6c78e;
